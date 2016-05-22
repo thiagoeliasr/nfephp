@@ -1,5 +1,6 @@
 <?php
 
+<<<<<<< HEAD
 namespace Common\Modules;
 
 class Modules
@@ -9,6 +10,26 @@ class Modules
     /**
      * 
      */
+=======
+namespace NFePHP\Common\Modules;
+
+/**
+ * Classe auxiliar para obter informações dos modulos instalados no PHP
+ * @category   NFePHP
+ * @package    NFePHP\Common\Modules
+ * @copyright  Copyright (c) 2008-2014
+ * @license    http://www.gnu.org/licenses/lesser.html LGPL v3
+ * @author     Roberto L. Machado <linux.rlm at gmail dot com>
+ * @link       http://github.com/nfephp-org/nfephp for the canonical source repository
+ */
+
+class Modules
+{
+    protected $list;
+    protected $cRed = '#FF0000';
+    protected $cGreen = '#00CC00';
+
+>>>>>>> upstream/master
     public function __construct()
     {
         ob_start();
@@ -40,11 +61,54 @@ class Modules
         }
         $this->list = $vModules;
     }
+<<<<<<< HEAD
 
     /**
      * Checagem rápida de o modulo esta carregadp
      * true se carregado ou false se não
      * 
+=======
+    
+    /**
+     * verifyRequiredModules
+     * Verifica se os modulos requeridos pela API estão instalados
+     * @param string $lista
+     * @return bool
+     */
+    public static function verifyRequiredModules(&$lista = '')
+    {
+        $aReq = array(
+            'libxml',
+            'openssl',
+            'zlib',
+            'dom',
+            'fileinfo',
+            'iconv',
+            'soap',
+            'xml',
+            'xmlreader',
+            'xmlwriter',
+            'zip',
+            'curl',
+            'gd',
+            'json',
+            'mcrypt',
+            'xsl');
+        $enabled = true;
+        
+        foreach ($aReq as $req) {
+            if (! extension_loaded($req)) {
+                $enabled = ($enabled && false);
+                $lista .= "$req não está carregado no PHP.\n";
+            }
+        }
+        return $enabled;
+    }
+    
+    /**
+     * Checagem rápida se o modulo está carregadp
+     * true se carregado ou false se não
+>>>>>>> upstream/master
      * @param string $moduleName
      * @return boolean
      */
@@ -57,9 +121,15 @@ class Modules
     }
 
     /**
+<<<<<<< HEAD
      * Obtem os parametros do modulo carregado
      * Pode ser uma simples configuração espacificada por $setting 
      * ou todos os valotes case nada seja passado no parâmetro
+=======
+     * Obtêm os parâmetros do modulo carregado
+     * Pode ser uma simples configuração especificada por $setting 
+     * ou todos os valores caso nada seja passado no parâmetro
+>>>>>>> upstream/master
      * @param string $moduleName
      * @param string $setting
      * @return string
@@ -70,6 +140,7 @@ class Modules
         if ($this->isLoaded($moduleName)==false) {
             return 'Modulo não carregado';
         }
+<<<<<<< HEAD
         if ($this->Modules[$moduleName][$setting]) {
             return $this->Modules[$moduleName][$setting];
         } elseif (empty($setting)) {
@@ -81,18 +152,37 @@ class Modules
     
     /**
      * Lista todos os modulos php intalados sem seus 
+=======
+        if ($this->list[$moduleName][$setting]) {
+            return $this->list[$moduleName][$setting];
+        } elseif (empty($setting)) {
+            return $this->list[$moduleName];
+        }
+        return 'Parâmetros não localizados';
+    }
+    
+    /**
+     * Lista todos os modulos php instalados sem seus 
+>>>>>>> upstream/master
      * parametros
      * @return array
      */
     public function listModules()
     {
+<<<<<<< HEAD
         foreach (array_keys($this->Modules) as $moduleName) {
+=======
+        foreach (array_keys($this->list) as $moduleName) {
+>>>>>>> upstream/master
             $onlyModules[] = $moduleName;
         }
         return $onlyModules;
     }
     
+<<<<<<< HEAD
     
+=======
+>>>>>>> upstream/master
     /**
      * Função para padronização do numero de versões de 2.7.2 para 020702 
      * @param string $ver
@@ -107,4 +197,73 @@ class Modules
         str_pad(isset($aVer[2]) ? $aVer[2] : '', 2, "0", STR_PAD_LEFT);
         return $nver;
     }
+<<<<<<< HEAD
+=======
+    
+    /**
+     * testPHP
+     * @param string $limit
+     * @return string
+     */
+    public function testPHP($limit = '5.4')
+    {
+        $phpversion = str_replace('-', '', substr(PHP_VERSION, 0, 6));
+        $phpver = $this->convVer($phpversion);
+        $phpcor = $this->cGreen;
+        $status = 'OK';
+        if ($phpver < $this->convVer($limit)) {
+            $phpcor = $this->cRed;
+            $status = 'NOK';
+        }
+        return "<tr bgcolor=\"#FFFF99\">"
+            . "<td>PHP vers&atilde;o $phpversion</td>"
+            . "<td bgcolor=\"$phpcor\"><div align=\"center\">$status</div></td>"
+            . "<td>A vers&atilde;o do PHP deve ser $limit ou maior</td></tr>";
+    }
+    
+    /**
+     * Rotina de teste dos molulos instalados 
+     * se a versão é suficiente e se estão habilitados
+     * @param string $name
+     * @param string $alias
+     * @param string $param1
+     * @param string $param2
+     * @param string $limit
+     * @param string $coment
+     * @return string
+     */
+    public function testModule(
+        $name,
+        $alias = '',
+        $param1 = '',
+        $param2 = '',
+        $limit = '',
+        $coment = ''
+    ) {
+        $cor = $this->cRed;
+        $msg = ' N&atilde;o instalado !!!';
+        $status = 'NOK';
+        if ($this->isLoaded($name)) {
+            $msg = '';
+            $num = '';
+            $enabled = 'enabled';
+            if (!empty($param1)) {
+                $version = $this->getModuleSetting($name, $param1);
+                $num = (int) $this->convVer($version);
+                $msg = ' vers&atilde;o ' . $version;
+            }
+            if (!empty($param2)) {
+                $enabled = $this->getModuleSetting($name, $param2);
+            }
+            if ($num >= (int) $this->convVer($limit) && $enabled == 'enabled') {
+                $cor = $this->cGreen;
+                $status = 'OK';
+            }
+        }
+        return "<tr bgcolor=\"#FFFF99\">"
+            . "<td>$alias $msg</td>"
+            . "<td bgcolor=\"$cor\"><div align=\"center\">$status</div></td>"
+            . "<td>$coment</td></tr>";
+    }
+>>>>>>> upstream/master
 }

@@ -13,7 +13,11 @@ AM Consulta de Cadastro não EXISTE
       <NfeConsultaCadastro method="consultaCadastro2" operation="CadConsultaCadastro2" version="2.00">https://homnfe.sefaz.am.gov.br/services2/services/CadConsultaCadastro2</NfeConsultaCadastro>
       <NfeConsultaProtocolo method="nfeConsultaNF2" operation="NfeConsulta2" version="3.10">https://homnfe.sefaz.am.gov.br/services2/services/NfeConsulta2</NfeConsultaProtocolo>
       <NfeInutilizacao method="nfeInutilizacaoNF2" operation="NfeInutilizacao2" version="1.00">https://homnfe.sefaz.am.gov.br/services2/services/NfeInutilizacao2</NfeInutilizacao>
+<<<<<<< HEAD
       <NFeRetAutorizacao method="nfeRetAutorizacaoLote" operation="NFeRetAutorizacao" version="3.10">https://homnfe.sefaz.am.gov.br/services2/services/NfeRetAutorizacao</NFeRetAutorizacao>
+=======
+      <NfeRetAutorizacao method="nfeRetAutorizacaoLote" operation="NFeRetAutorizacao" version="3.10">https://homnfe.sefaz.am.gov.br/services2/services/NfeRetAutorizacao</NfeRetAutorizacao>
+>>>>>>> upstream/master
       <NfeStatusServico method="nfeStatusServicoNF2" operation="NfeStatusServico2" version="3.10">https://homnfe.sefaz.am.gov.br/services2/services/NfeStatusServico2</NfeStatusServico>
       <RecepcaoEvento method="nfeRecepcaoEvento" operation="RecepcaoEvento" version="1.00">https://homnfe.sefaz.am.gov.br/services2/services/RecepcaoEvento</RecepcaoEvento>
     </homologacao>
@@ -30,14 +34,22 @@ AM Consulta de Cadastro não EXISTE
   <UF>
     <sigla>AN</sigla>
     <homologacao>
+<<<<<<< HEAD
       <NFeDistribuicaoDFe method="nfeDistDFeInteresse" operation="NFeDistribuicaoDFe" version="1.00">https://hom.nfe.fazenda.gov.br/NFeDistribuicaoDFe/NFeDistribuicaoDFe.asmx</NFeDistribuicaoDFe>
+=======
+      <NfeDistribuicaoDFe method="nfeDistDFeInteresse" operation="NFeDistribuicaoDFe" version="1.00">https://hom.nfe.fazenda.gov.br/NFeDistribuicaoDFe/NFeDistribuicaoDFe.asmx</NfeDistribuicaoDFe>
+>>>>>>> upstream/master
       <NfeConsultaDest method="nfeConsultaNFDest" operation="NfeConsultaDest" version="1.01">https://hom.nfe.fazenda.gov.br/NFeConsultaDest/NFeConsultaDest.asmx</NfeConsultaDest>
       <NfeDownloadNF method="nfeDownloadNF" operation="NfeDownloadNF" version="1.00">https://hom.nfe.fazenda.gov.br/NfeDownloadNF/NfeDownloadNF.asmx</NfeDownloadNF>
       <RecepcaoEvento method="nfeRecepcaoEvento" operation="RecepcaoEvento" version="1.00">https://hom.nfe.fazenda.gov.br/RecepcaoEvento/RecepcaoEvento.asmx</RecepcaoEvento>
       <RecepcaoEPEC method="nfeRecepcaoEvento" operation="RecepcaoEvento" version="1.00">https://hom.nfe.fazenda.gov.br/RecepcaoEvento/RecepcaoEvento.asmx</RecepcaoEPEC>
     </homologacao>
     <producao>
+<<<<<<< HEAD
       <NFeDistribuicaoDFe method="nfeDistDFeInteresse" operation="NFeDistribuicaoDFe" version="1.00">https://www1.nfe.fazenda.gov.br/NFeDistribuicaoDFe/NFeDistribuicaoDFe.asmx</NFeDistribuicaoDFe>        
+=======
+      <NfeDistribuicaoDFe method="nfeDistDFeInteresse" operation="NFeDistribuicaoDFe" version="1.00">https://www1.nfe.fazenda.gov.br/NFeDistribuicaoDFe/NFeDistribuicaoDFe.asmx</NfeDistribuicaoDFe>        
+>>>>>>> upstream/master
       <NfeConsultaDest method="nfeConsultaNFDest" operation="NfeConsultaDest" version="1.01">https://www.nfe.fazenda.gov.br/NFeConsultaDest/NFeConsultaDest.asmx</NfeConsultaDest>
       <NfeDownloadNF method="nfeDownloadNF" operation="NfeDownloadNF" version="1.00">https://www.nfe.fazenda.gov.br/NfeDownloadNF/NfeDownloadNF.asmx</NfeDownloadNF>
       <RecepcaoEvento method="nfeRecepcaoEvento" operation="RecepcaoEvento" version="1.00">https://www.nfe.fazenda.gov.br/RecepcaoEvento/RecepcaoEvento.asmx</RecepcaoEvento>
@@ -91,6 +103,7 @@ AM Consulta de Cadastro não EXISTE
   <UF>
     <sigla>GO</sigla>
     <homologacao>
+<<<<<<< HEAD
       <NfeAutorizacao method="nfeAutorizacaoLote" operation="NfeAutorizacao" version="3.10">https://homolog.sefaz.go.gov.br/nfe/services/v2/NfeAutorizacao</NfeAutorizacao>
       <NfeConsultaCadastro method="cadConsultaCadastro2" operation="CadConsultaCadastro2" version="2.00">https://homolog.sefaz.go.gov.br/nfe/services/v2/CadConsultaCadastro2</NfeConsultaCadastro>
       <NfeConsultaProtocolo method="nfeConsultaNF2" operation="NfeConsulta2" version="3.10">https://homolog.sefaz.go.gov.br/nfe/services/v2/NfeConsulta2</NfeConsultaProtocolo>
@@ -107,6 +120,36 @@ AM Consulta de Cadastro não EXISTE
       <NfeRetAutorizacao method="nfeRetAutorizacaoLote" operation="NfeRetAutorizacao" version="3.10">https://nfe.sefaz.go.gov.br/nfe/services/v2/NfeRetAutorizacao</NfeRetAutorizacao>
       <NfeStatusServico method="nfeStatusServicoNF2" operation="NfeStatusServico2" version="3.10">https://nfe.sefaz.go.gov.br/nfe/services/v2/NfeStatusServico2</NfeStatusServico>
       <RecepcaoEvento method="nfeRecepcaoEvento" operation="RecepcaoEvento" version="1.00">https://nfe.sefaz.go.gov.br/nfe/services/v2/RecepcaoEvento</RecepcaoEvento>
+=======
+       <RecepcaoEvento method="nfeRecepcaoEvento" operation="RecepcaoEvento" version="1.00">https://homolog.sefaz.go.gov.br/nfe/services/v2/RecepcaoEvento</RecepcaoEvento>
+       <NfeRecepcao method="nfeRecepcao2" operation="Recepcao2" version="2.00">https://homolog.sefaz.go.gov.br/nfe/services/v2/NfeRecepcao2</NfeRecepcao>
+       <NfeRetRecepcao method="nfeRetRecepcao2" operation="RecepcaoEvento" version="2.00">https://homolog.sefaz.go.gov.br/nfe/services/v2/NfeRetRecepcao2</NfeRetRecepcao>
+       <NfeInutilizacao method="nfeInutilizacao2" operation="NfeInutilizacao" version="3.10">https://homolog.sefaz.go.gov.br/nfe/services/v2/NfeInutilizacao2</NfeInutilizacao>
+       <NfeConsultaProtocolo method="nfeConsulta2" operation="NfeConsultaProtocolo" version="3.10">https://homolog.sefaz.go.gov.br/nfe/services/v2/NfeConsulta2</NfeConsultaProtocolo>
+       <NfeStatusServico method="nfeStatusServico2" operation="NfeStatusServico" version="3.10">https://homolog.sefaz.go.gov.br/nfe/services/v2/NfeStatusServico2</NfeStatusServico>
+       <NfeConsultaCadastro method="consultaCadastro2" operation="NfeConsultaCadastro" version="2.00">https://homolog.sefaz.go.gov.br/nfe/services/v2/CadConsultaCadastro2</NfeConsultaCadastro>       
+       <NfeAutorizacao method="nfeAutorizacao" operation="NfeAutorizacao" version="3.10">https://homolog.sefaz.go.gov.br/nfe/services/v2/NfeAutorizacao</NfeAutorizacao>
+       <NfeRetAutorizacao method="nfeRetAutorizacao" operation="NfeRetAutorizacao" version="3.10">https://homolog.sefaz.go.gov.br/nfe/services/v2/NfeRetAutorizacao</NfeRetAutorizacao>
+       <CscNFCe method="admCscNFCe" operation="CscNFCe" version="1.00">https://homolog.sefaz.go.gov.br/nfe/services/v2/CscNFCe</CscNFCe>       
+       <NfeConsultaQR method="QR-CODE" operation="NfeConsultaQR" version="100">http://www.nfe.go.gov.br/pagina/ver/10275/consulta-de-testes</NfeConsultaQR>
+       <NfeConsultaDest method="nfeConsultaNFDest" operation="NfeConsultaDest" version="3.10"></NfeConsultaDest>
+       <NfeDownloadNF method="nfeDownloadNF" operation="NfeDownloadNF" version="3.10"></NfeDownloadNF>
+    </homologacao>
+    <producao>
+       <RecepcaoEvento method="nfeRecepcaoEvento" operation="RecepcaoEvento" version="1.00">https://nfe.sefaz.go.gov.br/nfe/services/v2/RecepcaoEvento</RecepcaoEvento>
+       <NfeRecepcao method="nfeRecepcao2" operation="Recepcao2" version="2.00">https://nfe.sefaz.go.gov.br/nfe/services/v2/NfeRecepcao2</NfeRecepcao>
+       <NfeRetRecepcao method="nfeRetRecepcao2" operation="RecepcaoEvento" version="2.00">https://nfe.sefaz.go.gov.br/nfe/services/v2/NfeRetRecepcao2</NfeRetRecepcao>
+       <NfeInutilizacao method="nfeInutilizacao2" operation="NfeInutilizacao" version="3.10">https://nfe.sefaz.go.gov.br/nfe/services/v2/NfeInutilizacao2</NfeInutilizacao>
+       <NfeConsultaProtocolo method="nfeConsulta2" operation="NfeConsultaProtocolo" version="3.10">https://nfe.sefaz.go.gov.br/nfe/services/v2/NfeConsulta2</NfeConsultaProtocolo>
+       <NfeStatusServico method="nfeStatusServico2" operation="NfeStatusServico" version="3.10">https://nfe.sefaz.go.gov.br/nfe/services/v2/NfeStatusServico2</NfeStatusServico>
+       <NfeConsultaCadastro method="consultaCadastro2" operation="NfeConsultaCadastro" version="2.00">https://nfe.sefaz.go.gov.br/nfe/services/v2/CadConsultaCadastro2</NfeConsultaCadastro>       
+       <NfeAutorizacao method="nfeAutorizacao" operation="NfeAutorizacao" version="3.10">https://homolog.sefaz.go.gov.br/nfe/services/v2/NfeAutorizacao</NfeAutorizacao>
+       <NfeRetAutorizacao method="nfeRetAutorizacao" operation="NfeRetAutorizacao" version="3.10">https://nfe.sefaz.go.gov.br/nfe/services/v2/NfeRetAutorizacao</NfeRetAutorizacao>
+       <CscNFCe method="admCscNFCe" operation="CscNFCe" version="1.00">https://nfe.sefaz.go.gov.br/nfe/services/v2/CscNFCe</CscNFCe>       
+       <NfeConsultaQR method="QR-CODE" operation="NfeConsultaQR" version="100">http://www.nfe.go.gov.br/pagina/ver/10270/consulta-completa</NfeConsultaQR>
+       <NfeConsultaDest method="nfeConsultaNFDest" operation="NfeConsultaDest" version="3.10"></NfeConsultaDest>
+       <NfeDownloadNF method="nfeDownloadNF" operation="NfeDownloadNF" version="3.10"></NfeDownloadNF>
+>>>>>>> upstream/master
     </producao>
   </UF>
   <UF>
