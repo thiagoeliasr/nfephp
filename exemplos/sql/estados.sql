@@ -29,14 +29,14 @@ INSERT INTO `estado` (id_estado, nome_estado, uf_estado, codigo_estado) VALUES (
 INSERT INTO `estado` (id_estado, nome_estado, uf_estado, codigo_estado) VALUES (3, 'Amapá', 'AP', '16');
 INSERT INTO `estado` (id_estado, nome_estado, uf_estado, codigo_estado) VALUES (4, 'Amazonas', 'AM', '13');
 INSERT INTO `estado` (id_estado, nome_estado, uf_estado, codigo_estado) VALUES (5, 'Bahia', 'BA', '29');
-INSERT INTO `estado` (id_estado, nome_estado, uf_estado, codigo_estado) VALUES (6, 'Ceará', 'Ce', '23');
+INSERT INTO `estado` (id_estado, nome_estado, uf_estado, codigo_estado) VALUES (6, 'Ceará', 'CE', '23');
 INSERT INTO `estado` (id_estado, nome_estado, uf_estado, codigo_estado) VALUES (7, 'Distrito Federal', 'DF', '53');
 INSERT INTO `estado` (id_estado, nome_estado, uf_estado, codigo_estado) VALUES (8, 'Espírito Santo', 'ES', '32');
 INSERT INTO `estado` (id_estado, nome_estado, uf_estado, codigo_estado) VALUES (9, 'Goiás', 'GO', '52');
 INSERT INTO `estado` (id_estado, nome_estado, uf_estado, codigo_estado) VALUES (10, 'Maranhão', 'MA', '21');
 INSERT INTO `estado` (id_estado, nome_estado, uf_estado, codigo_estado) VALUES (11, 'Mato Grosso do Sul', 'MS', '50');
 INSERT INTO `estado` (id_estado, nome_estado, uf_estado, codigo_estado) VALUES (12, 'Mato Grosso', 'MT', '51');
-INSERT INTO `estado` (id_estado, nome_estado, uf_estado, codigo_estado) VALUES (13, 'Minas Gerais', 'MS', '31');
+INSERT INTO `estado` (id_estado, nome_estado, uf_estado, codigo_estado) VALUES (13, 'Minas Gerais', 'MG', '31');
 INSERT INTO `estado` (id_estado, nome_estado, uf_estado, codigo_estado) VALUES (14, 'Paraná', 'PR', '41');
 INSERT INTO `estado` (id_estado, nome_estado, uf_estado, codigo_estado) VALUES (15, 'Paraíba', 'PB', '25');
 INSERT INTO `estado` (id_estado, nome_estado, uf_estado, codigo_estado) VALUES (16, 'Pará', 'PA', '15');
