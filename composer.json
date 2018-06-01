@@ -67,15 +67,6 @@
             "./libs/Extras/"
         ]
     },
-<<<<<<< HEAD
-    "minimum-stability": "dev",
-    "extra": {
-        "branch-alias": {
-            "dev-master": "3.10.x-dev",
-            "dev-develop": "4.0.x-dev"
-        }
-    }
-=======
     "extra": {
         "branch-alias": {
             "dev-master": "4.0.x-dev",
@@ -83,5 +74,4 @@
         }
     },
     "minimum-stability": "dev"
->>>>>>> upstream/master
 }
